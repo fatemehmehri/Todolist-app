@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <title>Todo List</title>
+</head>
+
+<body class="disableScroll">
+    <h1>To Do List</h1>
+    <div class="main">
+        <div class="title">
+            <div class="title1">
+                <p>Title</p>
+                <input id="my-text" type="text" placeholder="Task to be done ...">
+            </div>
+            <div class="des">
+                <p>Description</p>
+                <textarea id="my-desc" cols="30" rows="10"></textarea>
+            </div>
+            <div class="btn">
+                <button id="btnsave" onclick="add()">Save</button>
+            </div>
+
+        </div>
+        <div id="result" style="overflow:auto;">
+            <p id="todo-title">TO DO LIST</p>
+            <p id="todo"></p>
+
+        </div>
+    </div>
+
+    <script src="todolist.js"></script>
+</body>
+
+</html>

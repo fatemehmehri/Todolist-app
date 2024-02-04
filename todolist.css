@@ -1,0 +1,193 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5fcfa;
+
+  }
+
+  h1 {
+    background: linear-gradient(#15d798, #032b53);
+    border-radius: 5px;
+    border: none;
+    font-size: 2 rem;
+    text-align: center;
+    padding: 18px 0;
+    color: #fff;
+  }
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.main .title .title1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.main .title .title1 input {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.main .des textarea {
+    border-radius: 5px;
+}
+
+.main .btn {
+    display: flex;
+    justify-content: center;
+    width:100px;
+    margin-top: 1rem;
+    margin-left: 60px;
+}
+
+.main #btnsave {
+    width:100px;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(#15d798, #032b53);
+   }
+
+.main #result {
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+    height: 500px;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    background: #436961;
+    color: #fff;
+
+}
+
+.main #result #box {
+    border: 1px solid;
+    width: 85%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.main #result #todo-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+.main #result #box button{
+    width:50px;
+    height: 35px ;
+    margin-left: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    color: #0a0a0a;
+    margin-top: 10px ;
+    background: linear-gradient(#e7efed, #046e45);
+}
+
+.disableScroll{
+overflow-y:hidden;
+overflow-x:hidden;
+
+
+}
+.main #result #box li{
+text-align: justify;
+margin-right: 45px;
+    white-space: normal;
+    float: left;
+    width: 70%;
+    height: auto;
+    word-wrap: break-word;}
+
+
+
+@media screen and (max-width: 1100px) {
+       .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .main .title .title1 {
+        width: 88%;
+        font-size: 14px;
+    }
+
+    .main .title .title1 input {
+        width: 95%;
+        height: 85%;
+    }
+   
+    .main .des {
+        width: 120%;
+        font-size: 14px;
+        margin-left: 80px;
+    }
+
+    .main .des textarea {
+        width: 95%;
+        height: 95%;
+
+    }
+    .main .btn{
+        margin-left: 50px;
+    }
+
+    .main .btn #btnsave {
+        width: 100%;
+        font-size: 14px;
+        height: 65%;
+        margin-top: 50PX;
+    }
+
+    .main #result #todo {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .main #result {
+        margin-bottom: 100px;
+    }
+    
+    .main #result #box{
+        width: 70%;
+        height: 70%;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        .main #result #box button{
+            margin-bottom:10px;
+           
+          }
+        .disableScroll{
+            overflow-y:hidden;
+            overflow-x:hidden;
+            
+            
+            }
+    }
+   
+  
